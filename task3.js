@@ -14,14 +14,21 @@
 
 
 
-
-
-
 function applyStyles() {
-// Ваш код ...
+    const mainElement = document.createElement('main');
+    mainElement.setAttribute('class', 'mainClass check item');
+
+    const divElement = document.createElement('div');
+    divElement.setAttribute('id', 'myDiv');
+
+    const paragraphElement = document.createElement('p');
+    paragraphElement.textContent = 'First paragraph';
+
+    divElement.appendChild(paragraphElement);
+    mainElement.appendChild(divElement);
+
+    const createElements = document.querySelector('.create_elements');
+    createElements.appendChild(mainElement);
 }
-
-
-
 
 module.exports = applyStyles;

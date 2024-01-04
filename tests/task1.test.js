@@ -10,11 +10,11 @@ global.document = window.document;
 const domManipulation = require('../task1.js');
 
 test('Повертає значення innerHTML елементів', () => {
-  const { firstEl, secondtEl, thirdtEl, fourthEl, lastEl } = domManipulation;
+  const { firstEl, secondEl, thirdEl, fourthEl, lastEl } = domManipulation;
 
   expect(firstEl).toBe('1');
-  expect(secondtEl).toBe('2');
-  expect(thirdtEl).toBe('3');
+  expect(secondEl).toBe('2');
+  expect(thirdEl).toBe('3');
   expect(fourthEl).toBe('4');
   expect(lastEl).toBe('5');
 });
